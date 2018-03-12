@@ -1,20 +1,33 @@
-function igpayAtinlay(ordway){
-	let ord = ordway.toLowerCase();
-	let vowelList = ['a', 'e', 'i', 'o', 'u']; 
-	let consonantList = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'];
+function primeTest(number){
+  
+let primeArr = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199];
 
-		if(vowelList.indexOf(ord[0]) != -1){
-		  console.log(`${ord}ay`);
-		}else if(consonantList.indexOf(ord[0])!= -1 && consonantList.indexOf(ord[1]) != -1  && consonantList.indexOf(ord[2]) != -1){
-		  let word = ord.slice(3)+ord.slice(0,3);
-		  console.log(word+"ay");
-		}else if(consonantList.indexOf(ord[0])!= -1 && consonantList.indexOf(ord[1]) != -1){
-		  let word = ord.slice(2)+ord.slice(0,2);
-		  console.log(word+"ay");
-		}else if(consonantList.indexOf(ord[0])!= -1){
-		  let word = ord.slice(1)+ord.slice(0,1);
-			console.log(word+"ay");
-		}else{
-			console.log("Something went wrong...");
-		}
+for (let i = 0; i < primeArr.length ;i++){
+// evaluate if given number divides evenly with any numbers in array..
+  if(number%primeArr[i] === 0){
+    console.log(`${number} is not prime!`);
+    return false;
+//evaluate if current number in the array is more than half the value given
+  }else if (primeArr[i] > number/2){
+    console.log(`${number} is prime`);
+    return true;
+//stopgap to ensure code is running up to this point
+  }else{
+    continue;
+  }
+}
+for(i = 201; i <= (number/2) ; i+=2){
+//evaluate if the next odd number divides evenly
+  if(number%i=== 0 ){
+    console.log(`${number} is not divisible by ${i}`);
+    return false;
+//evaluates if number being tested is more than half the value given
+  }else if(i > number/2){
+        console.log(`${number} is prime`);
+    return true;
+//final result after all tests...
+  }else{
+    return true;
+  }
+}
 }
