@@ -7,7 +7,6 @@
 .hidden3{
 	opacity: 0;
 }
-
 .show{
 	-webkit-animation: fadeIn 0.6s forward; 
   	animation:        fadeIn 0.6s forward;
