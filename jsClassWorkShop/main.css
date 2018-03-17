@@ -1,0 +1,14 @@
+.black{
+	border:3px solid black;
+	width: 80vw;
+}
+
+.red{
+	border: 3px solid red;
+	width: 80vw;
+}
+
+.green{
+	border: 3px solid green;
+	width: 80vw;
+}
