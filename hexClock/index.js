@@ -19,12 +19,11 @@ function hexClock(){
   
   let clock = document.getElementById('clock');
   let clockText = document.createTextNode(hexSet);
-  clock.appendChild(clockText);
-  return;
+  document.getElementById('clock').innerHTML = hexSet;
   
 }
 
-setInterval(hexClock(), 1000);
+setInterval(hexClock, 1000);
 
 
 
