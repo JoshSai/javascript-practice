@@ -12,37 +12,16 @@ function hexClock(){
   if(seconds < 10){
     seconds = `0${seconds}`;
   }
+  
   let hexSet = `#${hour}${minutes}${seconds}`;
-  return hexSet;
-}
-// let clock = document.getElementById('clock');
-// let clockText = document.createTextNode(hexClock());
-// let blankSpace = document.createTextNode(" ");
-// clock.appendChild(blankSpace);
-// clock.replaceChild(clockText, blankSpace);
-
-// function updateClock(){
-
-// }
-
-
-function initiateClock()
-{
-    let clock = document.getElementById('clock');
-let clockText = document.createTextNode(hexClock());
-let blankSpace = document.createTextNode(" ");
-clock.appendChild(clockText, blankSpace);
+  
+  document.body.style.backgroundColor = hexSet;
+  
+  let clock = document.getElementById('clock');
+  let clockText = document.createTextNode(hexSet);
+  document.getElementById('clock').innerHTML = hexSet;
+  
 }
 
-function replaceFirst()
-{
-  let clockText = document.createTextNode(hexClock());
-  let newTime = clock.appendChild(clockText);
-  let firstTime = document.getElementById('clock').firstChild;
-  document.getElementById('clock').replaceChild(firstTime, newTime);
-}
-
-
-setInterval(replaceFirst(), 1000);
-
+setInterval(hexClock, 1000);
 
