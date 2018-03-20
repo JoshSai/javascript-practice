@@ -1,0 +1,16 @@
+//You will need to build your own HTML to test.
+
+Selectors
+Write out a jquery statement that will grab all divs with the class of ‘nycda-class’
+Write out a jquery statement for grabbing just the first p tag that exists in a document
+Write out a jquery statement for grabbing all the siblings of a parent div element with the id of ‘parent-nycda-elem’
+
+Appending
+Create a div container with an id of ‘container’. Append 5 new divs too it each with the class of ‘cute’
+
+Style Changes
+Change the background color of your body to an obnoxious pink color
+
+Event Listeners
+Create a click listener to a div with the id of ‘click-listen’ that would make it disappear ( change the display property using something like hide ) when clicked.
+Create a hover listener for a div with the id of ‘keypress-listen’ that would make it change its color to blue 
