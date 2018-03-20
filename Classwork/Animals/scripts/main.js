@@ -11,3 +11,5 @@ for(i=6; i > 0; i--){
 $('p:nth-child(2)').append(cuteC);
 
 let arrHex = ["#481b1a","#874438","#ac7c83","#dfa981","#e6030c"];
+let randColor = arrHex[Math.floor(Math.random()*arrHex.length)];
+$('#pic-strip').mouseover(function(){$(this).css('background-color', randColor)});
