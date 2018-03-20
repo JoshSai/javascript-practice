@@ -27,6 +27,6 @@ $(document).ready(function(){
 function loopThroughAlias(arr){
 	for (var i = 0; i < arr.length; i++) {
 		console.log(arr[i]);
-		$('#my-actor').append(`<p>also known as ${arr[i]}...`);
+		$('#my-actor').append(`<p>also known as ${arr[i]}...</p>`);
 	}
 }
