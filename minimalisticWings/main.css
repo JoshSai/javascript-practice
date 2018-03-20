@@ -1,0 +1,100 @@
+body {          
+    align-items: center;        
+    display: flex; 
+    flex-direction: column; 
+ 
+    overflow: auto;
+}
+nav{
+	width:100%;
+	height:2%;
+	text-align: center;
+}
+
+/* navigation  */
+#headBar {
+	display:block;
+	flex-direction: row;
+	list-style-type: none;
+	width:100%;
+	text-align: center;
+	background: #2020b2;
+	padding: 10px 0 10px 0;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size:1.25em;
+	line-height: 1em;
+	height: 60px;
+	overflow: hidden;
+}
+#headBar a {
+	color: #c0c0ce;
+	font-size:2em;
+	line-height: 1em;
+	text-decoration: none;
+	opacity: 0.5;
+	font-weight: bold;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+#headBar a:hover {
+	opacity: 1;
+}
+ 
+#nav {
+	display:block;
+	flex-direction: row;
+	list-style-type: none;
+	height:200px;
+	background-color: #2020b2;
+	font-weight: bold;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	margin:0 auto;
+	padding: 8px 5px; 
+	font-size: 1em;
+	line-height: 1em;
+	text-align: center;
+	text-shadow: 1px 1px 0 #444;
+	opacity: 0.5;
+	text-shadow: none;
+}
+
+#nav a:hover { opacity: 1; }
+
+#nav li{
+	margin-top:0;
+	margin-bottom:0;
+	height:5%;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#nav li a {
+  display: block;
+  color: #c0c0ce;
+  font-size: 2rem;
+  line-height: 1em;
+  width:25%;
+  border: 2px solid transparent;
+  margin:3% 37%;
+  text-decoration: none;
+  opacity: 0.5;
+  text-shadow: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+ 
+#headBar:hover { height: 100%; }
+
+/*  photo banner */
+#landing{
+	margin:5% auto; 
+	width: 90%;
+	padding:3%;
+	background-image: url(pics/meeting.jpeg)
+
+}
+#landing img{
+	display:block;
+	margin: 0 5% 0 0;
+	width:100%;
+	height:auto;
+	animation: drop-in 3s 1s normal;
+	
+}
