@@ -98,3 +98,14 @@ nav{
 	animation: drop-in 3s 1s normal;
 	
 }
+#container{
+	display: flex;
+	flex-direction: column;
+	max-width:100%;
+}
+div{
+	display:flex;
+	flex-direction: column;
+	width:25%;
+
+}
