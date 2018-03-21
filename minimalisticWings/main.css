@@ -113,3 +113,63 @@ nav{
 .productPic{
 	width:100%;
 }
+
+.collapsible {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    
+}
+
+.active, .collapsible:hover {
+    opacity:0.5;
+}
+
+.content {
+   /* display: none;
+    overflow: hidden;*/
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.4s;
+}
+
+#productTag{
+	display: none;
+	overflow:hidden;
+}
+@media all and (max-width: 1400px) and ( min-width:1100px ){
+
+#container{
+	grid-template-columns: auto auto auto;
+}
+.title{
+	grid-template-columns: auto auto auto;
+}
+}
+@media all and (max-width: 1100px) and (min-width: 768px){
+
+#container{
+	grid-template-columns: auto auto;
+}
+.title{
+	grid-template-columns: auto auto;
+}
+}
+@media all and (max-width: 767px){
+
+#container{
+	grid-template-columns: auto;
+}
+.title{
+	grid-template-columns: auto;
+}
+}
+
+
+
+
+
