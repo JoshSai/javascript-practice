@@ -14,6 +14,7 @@ $(document).ready(function(){
 	success: function(data){
 		console.log(data);
 		let actor = data.playedBy.actor;
+		//could alternately be let kitH = $('<p></p>').text(actor);
 		let kitH = $('body').append(`<p>${actor}</p>`);
 		kitH.attr('id', 'my-actor');
 		loopThroughAlias(data.aliases);
