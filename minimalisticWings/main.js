@@ -19,8 +19,23 @@ function loopThrough(obj){
 		let properName = obj[i].title;
 		let photoFile = obj[i].images[0].src;
 		let mainInfo = obj[i].body_html;
-			$('#container').append(`<div class="title"><h3>${properName}</h3><img class="productPic" src="${photoFile}"><div class="htmlAbout">${mainInfo}</div></div>`);
 		let refTags = obj[i].tags;
+		$('#container').append(`<div class="title"><h3>${properName}</h3><button class="collapsible"><img class="productPic" src="${photoFile}"></button><div class="content"><div>${mainInfo}</div><section id="productTag">${refTags}</section></div></div>`);
 		console.log(refTags);
 	}
 }
+
+let collapse = $(".collapsible");
+for (let i = 0; i < collapse.length; i++) {
+    collapse[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+
+
