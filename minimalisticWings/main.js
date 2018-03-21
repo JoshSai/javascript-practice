@@ -1,3 +1,4 @@
+$(document).ready(function(){
 $.ajax({
 	url: "https://www.redbullshopus.com/products.json" , 
 	type: 'GET' , 
@@ -17,4 +18,4 @@ $.ajax({
 		console.log(error);
 	}
 })
-}
+})
