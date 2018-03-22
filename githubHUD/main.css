@@ -1,0 +1,45 @@
+#ghLink{
+	display:grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	text-align: center;
+	color: #71a3f2;
+	border:2px outset gray;
+	border-radius: 10%;
+	box-shadow: 10px 10px 25px black inset;
+	padding:5%;
+	width:30%;
+	height:auto;
+
+}
+#personal{
+	border:1px inset gray;
+	border-radius: 5%;
+	background-color: #d0ddef;
+	color: #8c8c8c;
+}
+#myName{
+	
+}
+#myPic{
+	margin:0 auto;
+	border-radius: 100%;
+	width:50%;
+}
+#myRepos{
+	
+}
+#myFollowers{
+	
+}
+#myF{
+	
+}
+.follower{
+
+}
+.folPic{
+	margin:0 auto;
+	border-radius: 100%;
+	width:50%;
+}

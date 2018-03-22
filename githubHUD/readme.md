@@ -32,6 +32,8 @@
 
 
 ### Bonus: Try to replicate the functionality from the first design inspiration link. A user should be able to pass a github username into a input box and you should pull that users data and display it!
+
+
 ### Completion Requirements
 ### Complete Workshop by end of a lot time limit.
 ### The completed web page has:
