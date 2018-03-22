@@ -141,16 +141,24 @@ nav{
 	display: none;
 	overflow:hidden;
 }
-@media all and (max-width: 1400px) and ( min-width:1100px ){
+@media all and (max-width: 1100px) and ( min-width:900px ){
 
 #container{
 	grid-template-columns: auto auto auto;
+	padding:1% 2%;
+
 }
 .title{
 	grid-template-columns: auto auto auto;
+	grid-row-gap: 1%;
+	grid-column-gap: 1%;
+	box-shadow: 10px 10px 25px gray;
+	padding: 1% 2%;
+	overflow:hidden;
+	margin:1% 5%;
 }
 }
-@media all and (max-width: 1100px) and (min-width: 768px){
+@media all and (max-width: 899px) and (min-width: 768px){
 
 #container{
 	grid-template-columns: auto auto;
