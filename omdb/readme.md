@@ -21,3 +21,4 @@ Lets practice using a form tag to submit a AJAX API call
 #### 2. The form tag should take in input for a movie title and another input for movie year
 #### 3. Use that form to call the omdb API with the values from the form input and append the response onto your page in a div. You can do all the data or just some parts, your call!
 Note : By default forms will try to submit and refresh the page. Look into a way to prevent that behavior.
+### In main.js I utilize the OMDb API, take user inputted film and release years, and return the title, image, cast, director, etc. 
